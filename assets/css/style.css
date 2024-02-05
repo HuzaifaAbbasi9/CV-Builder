@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+/* Preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+}
+
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+}
+
+.form {
+    height: 100vh;
+    display: flex;
+}
+.form-content
+{
+    padding: 5%;
+    border: 1px solid #ced4da;
+    margin: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+.link {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+.action-btns {
+    position: absolute;
+    right: 17px;
+    top: 12px;
+}
+.action-btns .icons {
+    cursor: pointer;
+    color: #495057;
+    display: none;
+}
+.action-btns .icons.show-icon  {
+    display: unset;
+}
+.form-control{
+    border-radius:1.5rem;
+    padding: 10px 25px;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #0062cc;
+    color: #fff;
+    outline: none !important;
+    box-shadow: none !important;
+}
